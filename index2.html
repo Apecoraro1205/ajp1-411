@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alex Pecoraro">
+    <title>Displaying First and Last Name</title>
+    <link href="stylesheets/IT411b.css" rel="stylesheet">
+    <img src="../images/sftwear.png">
+</head>
+
+<body>
+    <h1>Display Name t-shirt maker Page</h1>
+    <p>This page will prompt for your name and display it formatted for the creation of your shirt.</p>
+    <script>
+        var firstName = prompt("Please enter your first name");
+        var lastName = prompt("Please enter your last name");
+        var fullName = lastName + ", " + firstName
+        var output = "<p>" + fullName + "</p>";
+        document.write(output);
+
+    </script>
+</body>
+
+</html>

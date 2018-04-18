@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alex Pecoraro">
+    <title>Converting Birthday to Approximate Age</title>
+    <link href="stylesheets/IT411b.css" rel="stylesheet">
+    <img src="../images/sftwear.png">
+
+</head>
+
+<body>
+    <h1>This web page will create the your age shirt</h1>
+    <script>
+        var dateInput = prompt("Please enter your birthday");
+        //alert(dateInput);
+        var today = new Date();
+        //alert(today);
+        var theDate = new Date(dateInput);
+        var outputYear = "<p>" + (today.getFullYear() - theDate.getFullYear()) + "</p>";
+        document.write("I am " + outputYear);
+
+    </script>
+
+
+</body>
+
+</html>
